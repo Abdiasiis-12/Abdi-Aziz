@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const messageInput = document.getElementById('message').value.trim();
 
             if (!nameInput || !emailInput || !subjectInput || !messageInput) {
-                showStatus('Fadlan wada buuxi dhamaan meelaha banaan.', 'error');
+                showStatus('Please fill in all fields.', 'error');
                 return;
             }
 
@@ -160,11 +160,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const submitBtn = contactForm.querySelector('button[type="submit"]');
             const originalBtnText = submitBtn.innerHTML;
             submitBtn.disabled = true;
-            submitBtn.innerHTML = 'Gudbinayaa... <i class="fa-solid fa-spinner fa-spin"></i>';
+            submitBtn.innerHTML = 'Sending... <i class="fa-solid fa-spinner fa-spin"></i>';
 
             setTimeout(() => {
                 // Success message
-                showStatus('Mahadsanid! Fariintaada si guul leh ayaa loo diray. Waan kula soo xiriiri doonaa dhowaan.', 'success');
+                showStatus('Thank you! Your message has been sent successfully. I will get back to you soon.', 'success');
                 contactForm.reset();
                 submitBtn.disabled = false;
                 submitBtn.innerHTML = originalBtnText;

@@ -447,6 +447,55 @@ img {
     font-weight: 600;
 }
 
+.about-education {
+    margin-top: 40px;
+}
+
+.about-education h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    border-left: 4px solid var(--primary);
+    padding-left: 15px;
+}
+
+.education-card {
+    background: var(--bg-glass);
+    border: 1px solid var(--border-glass);
+    padding: 20px;
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-glass);
+    position: relative;
+    margin-top: 15px;
+    transition: transform var(--transition-speed) ease, border-color var(--transition-speed) ease;
+}
+
+.education-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--primary);
+}
+
+.education-date {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--primary);
+    background: var(--accent-glow);
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.education-card h4 {
+    font-size: 1.15rem;
+    margin-bottom: 5px;
+}
+
+.education-card p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin-bottom: 0 !important;
+}
+
 .about-stats {
     display: flex;
     flex-direction: column;
